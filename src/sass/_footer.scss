@@ -1,0 +1,53 @@
+//
+// footer
+// --------------------
+
+footer {
+  color: $c-white;
+
+  a {
+    color: $c-white;
+
+    &:hover {
+      color: $c-white;
+    }
+  }
+
+  .footer-top {
+    background-color: $footer-bg-color;
+    padding-top: 97px;
+
+    ul {
+      margin-bottom: 45px;
+
+      li {
+        &.list-inline-item:not(:last-child) {
+          @media (min-width: 992px) {
+            margin-right: 80px;
+           }
+        }
+
+        a {
+          font-size: 13px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+
+  .footer-bottom {
+    background-color: $footer-aux-color;
+    padding: 26px 0;
+
+    &__copy {
+      font-size: 13px;
+      font-weight: 400;
+      margin: 0;
+    }
+
+    &__lang {
+      font-size: 11px;
+      font-weight: 400;
+    }
+  }
+}
