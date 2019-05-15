@@ -1,0 +1,19 @@
+//
+// import stylesheets
+// --------------------
+@import "../../node_modules/bootstrap/dist/css/bootstrap.css";
+// @import "../../node_modules/bootstrap/dist/css/bootstrap-theme.css";
+@import "_colors";
+@import "_header";
+
+//
+// geral
+// --------------------
+
+body {
+  background-color: $main-bg-color;
+}
+
+p {
+  font-size: responsive;
+}
