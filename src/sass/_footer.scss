@@ -17,7 +17,43 @@ footer {
     background-color: $footer-bg-color;
     padding-top: 97px;
 
-    ul {
+    .container {
+      .row:last-child {
+        border-top: solid 1px rgba($color: $footer-border-color, $alpha: .24);
+        padding-top: 43px;
+      }
+    }
+
+    &__social {
+      margin-bottom: 64px;
+      margin-top: 23px;
+
+      li {
+        a {
+          background-color: $footer-social-color;
+          border-radius: 50%;
+          display: block;
+          height: 24px;
+          width: 24px;
+        }
+      }
+    }
+
+    &__label {
+      display: block;
+      font-size: 14px;
+      font-weight: 500;
+      margin: 0 auto 31px;
+      max-width: 205px;
+      text-align: center;
+
+      @media (min-width: 576px) {
+        margin: 0 0 31px;
+        text-align: left;
+      }
+    }
+
+    &__menu {
       margin-bottom: 45px;
 
       li {
