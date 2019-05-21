@@ -96,6 +96,13 @@ footer {
       font-size: 13px;
       font-weight: 400;
       margin: 0;
+      padding: 0 0 26px;
+      text-align: center;
+
+      @media (min-width: 576px) {
+        text-align: left;
+        padding: 0;
+      }
     }
 
     &__search {
@@ -109,6 +116,16 @@ footer {
 
       img {
         max-width: 24px;
+      }
+    }
+
+    .dropdown {
+      text-align: center;
+      padding: 26px 0 0;
+
+      @media (min-width: 576px) {
+        text-align: left;
+        padding: 0;
       }
     }
 
@@ -131,6 +148,7 @@ footer {
       &:active {
         background-color: transparent;
       }
+
     }
   }
 }
