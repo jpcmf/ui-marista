@@ -1,5 +1,41 @@
 header {
+  background-color: $c-white !important;
+
   .navbar-default {
     background-color: $header-bg-color;
+  }
+
+  &.header-blc {
+    .navbar {
+      padding-bottom: 18px;
+      padding-top: 17px;
+
+      &.bg-light {
+        background-color: $c-white !important;
+      }
+    }
+
+    .navbar-brand {
+      padding: 0;
+
+      img {
+        max-width: 180px;
+      }
+    }
+
+    .navbar-nav {
+      li {
+        a {
+          color: $c-blue-dark !important;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 16px;
+
+          & > img {
+            max-width: 24px;
+          }
+        }
+      }
+    }
   }
 }
