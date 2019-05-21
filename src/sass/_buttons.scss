@@ -1,0 +1,18 @@
+//
+// buttons
+// --------------------
+
+.btn {
+  &.btn-newsletter {
+    background-color: $footer-button-color;
+    border-radius: 50% !important;
+    color: $c-white;
+    height: 35px;
+    left: -39px;
+    padding: unset;
+    position: relative;
+    top: 5px;
+    width: 35px;
+    z-index: 100 !important;
+  }
+}

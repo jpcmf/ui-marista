@@ -1,0 +1,154 @@
+//
+// footer
+// --------------------
+
+footer {
+  color: $c-white;
+
+  a {
+    color: $c-white;
+
+    &:hover {
+      color: $c-white;
+    }
+  }
+
+  .footer-top {
+    background-color: $footer-bg-color;
+    padding-top: 97px;
+
+    .container {
+      .row:last-child {
+        border-top: solid 1px rgba($color: $footer-border-color, $alpha: .24);
+        padding-top: 43px;
+      }
+    }
+
+    &__logo {
+      max-width: 226px;
+    }
+
+    &__social {
+      margin-bottom: 64px;
+      margin-top: 23px;
+
+      li {
+        &:not(:last-child) {
+          margin-right: 22px;
+        }
+
+        a {
+          background-color: $footer-social-color;
+          border-radius: 50%;
+          display: block;
+
+          img {
+            height: 24px;
+            width: 24px;
+          }
+        }
+      }
+    }
+
+    &__label {
+      display: block;
+      font-size: 14px;
+      font-weight: 600;
+      margin: 0 auto 31px;
+      max-width: 205px;
+      text-align: center;
+
+      @media (min-width: 576px) {
+        margin: 0 0 31px;
+        text-align: left;
+      }
+
+      span {
+        font-family: $font-playfair;
+        font-style: italic;
+        font-size: 19px;
+      }
+    }
+
+    &__menu {
+      margin-bottom: 45px;
+
+      li {
+        &.list-inline-item:not(:last-child) {
+          @media (min-width: 992px) {
+            margin-right: 80px;
+           }
+        }
+
+        a {
+          font-size: 13px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+
+  .footer-bottom {
+    background-color: $footer-aux-color;
+    padding: 26px 0;
+
+    &__copy {
+      font-size: 13px;
+      font-weight: 400;
+      margin: 0;
+      padding: 0 0 26px;
+      text-align: center;
+
+      @media (min-width: 576px) {
+        text-align: left;
+        padding: 0;
+      }
+    }
+
+    &__search {
+      display: block;
+      text-align: center;
+
+      @media (min-width: 992px) {
+        border-left: solid 1px rgba($footer-border-color, .73);
+        border-right: solid 1px rgba($footer-border-color, .73);
+      }
+
+      img {
+        max-width: 24px;
+      }
+    }
+
+    .dropdown {
+      text-align: center;
+      padding: 26px 0 0;
+
+      @media (min-width: 576px) {
+        text-align: left;
+        padding: 0;
+      }
+    }
+
+    &__lang {
+      appearance: none;
+      background-color: transparent;
+      border: 0;
+      color: $c-white;
+      font-size: 11px;
+      font-weight: 400;
+      outline: 0;
+
+      &:after {
+        color: $footer-border-color;
+        vertical-align: 0.18em;
+      }
+
+      &:hover,
+      &:focus,
+      &:active {
+        background-color: transparent;
+      }
+
+    }
+  }
+}
