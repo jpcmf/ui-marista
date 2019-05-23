@@ -13,6 +13,52 @@ header {
       &.bg-light {
         background-color: $c-white !important;
       }
+
+      &__search {
+        padding: 0 30px;
+        position: relative;
+
+        &:before {
+          border-right: solid 1px rgba($c-blue, .04);
+          content: '';
+          display: block;
+          height: 25px;
+          position: absolute;
+          left: 0;
+          top: 0;
+        }
+
+        &:after {
+          border-left: solid 1px rgba($c-blue, .04);
+          content: '';
+          display: block;
+          height: 25px;
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
+
+        img {
+          max-width: 24px;
+          height: 24px;
+        }
+      }
+
+      .dropdown {
+        button {
+          appearance: none;
+          align-items: center;
+          border: solid 1px $c-blue;
+          border-radius: 19px;
+          color: $c-blue;
+          display: flex;
+          font-size: 16px;
+          font-weight: bold;
+          justify-content: center;
+          padding: 5px 0;
+          width: 110px;
+        }
+      }
     }
 
     .navbar-brand {
@@ -25,6 +71,8 @@ header {
 
     .navbar-nav {
       li {
+        display: flex;
+        align-items: center;
         a {
           color: $c-blue-dark !important;
           font-weight: 600;
@@ -33,6 +81,39 @@ header {
 
           & > img {
             max-width: 24px;
+          }
+
+
+          &.nav-link--arrow {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+            width: 80%;
+
+            &:after {
+              // flex: 0 0 auto;
+              // background-color: $c-blue;
+              border-left: solid 1px rgba($c-blue, .04);
+              // border-radius: 50%;
+              content: '';
+              display: block;
+              height: 25px;
+              // width: 15px;
+              position: absolute;
+              right: 0;
+            }
+            // span {
+            //   flex: 0 0 auto;
+            //   background-color: $c-blue;
+            //   border-radius: 50%;
+            //   content: '';
+            //   display: block;
+            //   height: 15px;
+            //   width: 15px;
+            //   position: absolute;
+            //   right: 0;
+            // }
           }
         }
       }
