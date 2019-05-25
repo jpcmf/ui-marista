@@ -52,16 +52,16 @@
   </script> -->
 
   <header class="header-blc">
-    <div class="container">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light navbar-primary" role="navigation">
+      <div class="container">
         <a class="navbar-brand" href="#">
           <img src="/src/images/logo-marista-c@2x.png" alt="Marista">
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarOne" aria-controls="navbarOne" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" id="navbarOne">
           <ul class="navbar-nav">
             <li class="nav-item active">
               <a class="nav-link nav-link--arrow" href="#"><span>INSTITUTO MARISTA</span></a>
@@ -89,12 +89,11 @@
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
           </form> -->
-          <a class="navbar__search" href="">
+          <a class="navbar-primary__search" href="">
             <img src="/src/images/icon-lupa2x.png" alt="lupa">
           </a>
           <div class="dropdown">
-            <button class="dropdown-toggle footer-bottom__lang" type="button" id="dropdownLang" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
+            <button class="dropdown-toggle footer-bottom__lang" type="button" id="dropdownLang" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               ENG
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownLang">
@@ -104,8 +103,83 @@
             </div>
           </div>
         </div>
-      </nav>
-    </div>
+      </div>
+    </nav>
+
+    <nav class="navbar navbar-expand-lg navbar-light navbar-secondary" role="navigation">
+      <div class="container">
+        <!-- <a class="navbar-brand" href="#">Navbar Secondary</a> -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTwo" aria-controls="navbarTwo" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTwo">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link nav-link--arrow" href="#"><span>HOME</span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarAtividades" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                ATIVIDADES
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarAtividades">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarNoticias" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                NOTÍCIAS
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarNoticias">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarFotos" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                FOTOS
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarFotos">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarVideos" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                VÍDEOS
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarVideos">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarVideos" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                BIBLIOTECA
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarVideos">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link nav-link--button" href="#"><span>FALE CONOSCO</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   </header> <!-- end -->
 
   <main>

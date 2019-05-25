@@ -1,4 +1,4 @@
-$main-bg-color   : #ffff00;
+$main-bg-color   : #FFF;
 $header-bg-color : #000;
 
 //basics
@@ -8,6 +8,9 @@ $c-blue: #3C82B9;
 $c-blue-dark : #0F314B;
 
 //layout
+$header-secondary-bg-color : #053A64;
+$header-button-color: #3C82B9;
+
 $footer-bg-color: #0F314B;
 $footer-aux-color: #123652;
 $footer-input-color: #1D4A6D;
@@ -15,3 +18,14 @@ $footer-button-color: #3C82B9;
 $footer-social-color: #3C82B9;
 $footer-border-color: #204867;
 $footer-sep-color: #17405F;
+
+// default bootstrap variables
+$grid-float-breakpoint: 768px;
+$grid-gutter-width: 30px;
+$navbar-height: 50px;
+$zindex-navbar-fixed: 1030;
+
+// module variables
+$navbar_secondary--height: 50px !default;
+$navbar_secondary--z-index: $zindex-navbar-fixed - 1;
+$navbar_secondary--padding-uncollapsed: 0; // $grid-gutter-width
