@@ -166,7 +166,7 @@ header {
             width: 100%;
 
             a {
-              color: $c-white !important;
+              color: $c-white;
               font-weight: 600;
               font-size: 14px;
               line-height: 16px;
@@ -181,14 +181,21 @@ header {
             }
 
             &.dropdown--megamenu {
-              position: fixed;
-              left: 0;
-              top: 0;
-              z-index: 100;
+              // display: none;
+              width: 75px;
 
-              .dropdown-toggle {
-                background-color: $c-blue;
-                height: 110px;
+              @media (min-width: 1200px) {
+                // border: 1px solid red;
+                // display: flex;
+                position: fixed;
+                left: 0;
+                top: 0;
+                z-index: 100;
+
+                .dropdown-toggle {
+                  background-color: $c-blue;
+                  height: 110px;
+                }
               }
             }
           }
@@ -196,8 +203,9 @@ header {
 
         /* adds some margin below the link sets  */
         &.navbar .dropdown-menumega div[class*="col"] {
+          // border: 1px solid red;
           margin-bottom:1rem;
-          border: 1px solid red;
+          padding-top: 130px;
         }
 
         &.navbar .dropdown-menumega {
@@ -222,7 +230,7 @@ header {
 
           /* makes the dropdown full width  */
           .dropdown--megamenu {
-            position:static;
+            position: static;
           }
 
           .dropdown-menumega {
@@ -234,6 +242,7 @@ header {
             top:0;
             width:100%;
             z-index: -1;
+            position: fixed;
 
             &.show {
               background-color: $c-white!important;
@@ -246,6 +255,29 @@ header {
                 position: absolute;
                 top: 0;
                 width: 70px;
+              }
+            }
+
+            h5 {
+              color: $c-blue-dark;
+              font-family: $font-raleway;
+              font-size: 18px;
+              font-weight: 700;
+              line-height: 22px;
+              padding-top: 8px;
+              width: 60%;
+
+              &.active {
+                border-top: solid 1px $c-blue;
+                color: $c-blue;
+              }
+            }
+
+            ul {
+              li {
+                a {
+                  color: $header-megamenu-link-color;
+                }
               }
             }
           }
