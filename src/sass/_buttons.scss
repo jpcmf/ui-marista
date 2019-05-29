@@ -15,4 +15,15 @@
     width: 35px;
     z-index: 99 !important;
   }
+
+  &.btn-fale {
+    background-color: $footer-button-color;
+    border-radius: 19px !important;
+    // color: $c-white;
+    padding-bottom: 11px !important;
+    padding-top: 11px !important;
+    max-width: 195px;
+    width: 100%;
+    z-index: 99 !important;
+  }
 }
