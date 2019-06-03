@@ -22,6 +22,14 @@ header {
     }
 
     .navbar {
+      .navbar-toggler {
+        border: 0;
+
+        &-icon {
+          background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='#0F314B' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+      }
+
       &-primary {
         background-color: $c-white !important;
         padding-bottom: 19px;
@@ -93,13 +101,27 @@ header {
               }
 
               &.nav-link--arrow {}
+
+              &.nav-link--icon {
+                position: relative;
+                z-index: 110;
+              }
             }
+          }
+        }
+
+        .navbar-collapse {
+          margin-top: 20px;
+
+          @media (min-width: 992px) {
+            margin-top: 0;
           }
         }
 
         &__search {
           padding: 0 30px;
           position: relative;
+          z-index: 110;
 
           &:before {
             border-right: solid 1px rgba($c-blue, .04);
@@ -128,6 +150,14 @@ header {
         }
 
         .dropdown {
+          margin-top: 10px;
+          position: relative;
+          z-index: 110;
+
+          @media (min-width: 1200px) {
+            margin-top: 0;
+          }
+
           button {
             appearance: none;
             align-items: center;
@@ -136,15 +166,16 @@ header {
             border-radius: 19px;
             color: $c-blue;
             display: flex;
-            font-size: 12px;
-            font-weight: bold;
+            font-family: $font-ws;
+            font-size: 14px;
+            font-weight: 500;
             justify-content: center;
-            margin-left: 18px;
             padding: 5px 0;
             width: 110px;
 
             @media (min-width: 1200px) {
               font-size: 16px;
+              margin-left: 18px;
             }
           }
         }
@@ -234,6 +265,7 @@ header {
               position: inherit;
 
               .dropdown-menu {
+                border: 1px solid red;
                 background-color: $header-submenu-bg-color;
                 border: 0;
                 border-radius: 0;
@@ -258,13 +290,18 @@ header {
 
             &.dropdown--megamenu {
               display: none;
+
               @media (min-width: 1200px) {
                 display: block;
-                width: 75px;
-                position: fixed;
                 left: 0;
+                position: fixed;
                 top: 0;
                 z-index: 100;
+                width: 75px;
+
+                .dropdown-menu {
+                  padding-top: 0;
+                }
 
                 .dropdown-toggle {
                   background-color: $c-blue;
@@ -288,7 +325,6 @@ header {
                     background: #fff;
                     border-radius: 2px;
                     position: absolute;
-                    // box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
                     transition: 0.5s;
 
                     &:before {
@@ -343,6 +379,7 @@ header {
 
                 a {
                   border: 0;
+                  font-size: 16px;
                   padding-bottom: 0.5rem;
                   padding-left: 10px;
                   padding-top: 0.5rem;
@@ -375,6 +412,8 @@ header {
                     color: $header-megamenu-sublink-color;
                     font-size: 13px;
                     font-weight: 400;
+                    padding-bottom: 3px;
+                    padding-top: 3px;
 
                     &:hover {
                       color: $header-megamenu-sublink-color;
@@ -397,7 +436,7 @@ header {
         }
 
         &.navbar .dropdown-menumega div[class*="col-12"] {
-          padding-top: 65px;
+          padding-top: 45px;
         }
 
         &.navbar .dropdown-menumega {
