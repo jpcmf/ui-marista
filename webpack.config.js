@@ -27,7 +27,7 @@ plugins.push(new webpack.ProvidePlugin({
 }));
 
 plugins.push(new copyWebpackPlugin([
-  { from: 'src/images/*', to: 'images/' }
+  { from: 'src/images/*', to: '' }
 ]));
 
 plugins.push(new webpack.optimize.CommonsChunkPlugin({

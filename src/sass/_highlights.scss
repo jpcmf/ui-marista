@@ -1,0 +1,24 @@
+//
+// slider home
+// --------------------
+
+.mc-highlights {
+
+  .carousel {
+    height: 140px;
+
+    &-inner {
+      background-color: $c-blue;
+      height: 140px;
+
+      & > .carousel-item {
+        &-prev,
+        &-next,
+        &.active {
+          display: flex;
+        }
+
+      }
+    }
+  }
+}
