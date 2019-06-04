@@ -9,7 +9,28 @@
 
     &-nav {
       background-color: $c-blue;
+      box-shadow: 0 0 50px rgba(#000000, .16);
+      height: 33px;
+      position: relative;
+      z-index: 1;
       width: 220px;
+
+      span {
+        color: $c-white;
+        font-size: 14px;
+        font-weight: 800;
+        text-align: center;
+        width: 100%;
+      }
+
+      a {
+        background-color: $c-white;
+        border: 0;
+        border-radius: 0;
+        height: 33px;
+        width: 35px;
+      }
+
     }
 
     &-inner {
