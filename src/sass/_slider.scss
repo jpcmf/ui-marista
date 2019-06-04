@@ -1,0 +1,73 @@
+//
+// slider home
+// --------------------
+
+.mc-bannerfull {
+
+  .carousel {
+
+    &-indicators {
+      bottom: 0;
+      height: 20px;
+      left: 20px;
+      margin: auto;
+      position: absolute;
+      right: auto;
+      top:0;
+      width: auto;
+      // -webkit-transform: rotate(90deg);
+      // -moz-transform: rotate(90deg);
+      // -ms-transform: rotate(90deg);
+      // -o-transform: rotate(90deg);
+      transform: rotate(90deg);
+
+      li {
+        background-color: $c-white;
+        border-radius: 50%;
+        height: 4px;
+        opacity: 1;
+        width: 4px;
+
+        &.active {
+          background-color: $c-blue;
+        }
+      }
+    }
+
+    &-caption {
+      top: 50%;
+      transform: translateY(-50%);
+      bottom: initial;
+
+     p {
+       margin: 0;
+      }
+    }
+
+    &-control {
+      display: none;
+    }
+  }
+
+  &__txt1,
+  &__txt3 {
+    font-family: $font-playfair;
+    font-style: italic;
+  }
+
+  &__txt1 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  &__txt3 {
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  &__txt2 {
+    font-size: 70px;
+    line-height: 70px;
+    font-weight: 800;
+  }
+}
