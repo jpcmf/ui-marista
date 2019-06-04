@@ -54,6 +54,8 @@ $(document).ready(function() {
 
   // multi carousel home
   // --------------------------------------
+  $('.next').click(function () { $('.carousel--multi').carousel('next'); return false; });
+  $('.prev').click(function () { $('.carousel--multi').carousel('prev'); return false; });
   // $('.carousel--multi').carousel({
   //   interval: false
   // });

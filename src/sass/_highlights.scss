@@ -7,8 +7,13 @@
   .carousel {
     height: 140px;
 
-    &-inner {
+    &-nav {
       background-color: $c-blue;
+      width: 220px;
+    }
+
+    &-inner {
+      background-color: $c-blue-medium;
       height: 140px;
 
       & > .carousel-item {
