@@ -52,7 +52,7 @@ if(process.env.NODE_ENV == 'production') {
 
 module.exports = {
   entry: {
-    app: './src/js/app.js',
+    app: ['./src/js/app.js', 'font-awesome/scss/font-awesome.scss'],
     vendor: ['jquery', 'popper.js', 'bootstrap']
   },
   output: {
@@ -95,6 +95,13 @@ module.exports = {
       {
         test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
         loader: 'url-loader?limit=10000&mimetype=image/svg+xml'
+      },
+      {
+        test: /font-awesome\.config\.js/,
+        use: [
+          { loader: 'style-loader' },
+          { loader: 'font-awesome-loader' }
+        ]
       }
     ]
   },
