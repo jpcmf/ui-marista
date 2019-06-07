@@ -4,9 +4,10 @@
 
 .mc-highlights {
   margin-top: -140px;
+  position: relative;
+  z-index: 10;
 
   .carousel {
-    // height: 140px;
 
     &-nav {
       background-color: $c-blue;
@@ -33,6 +34,13 @@
         height: 33px;
         justify-content: center;
         width: 35px;
+
+        &:hover,
+        &:focus,
+        &:active {
+          background-color: $c-white;
+          border: 0;
+        }
 
         i {
           color: $c-blue;

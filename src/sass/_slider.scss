@@ -8,6 +8,7 @@
 
     &-indicators {
       bottom: 0;
+      display: none;
       height: 20px;
       left: 20px;
       margin: auto;
@@ -31,6 +32,10 @@
         &.active {
           background-color: $c-blue;
         }
+      }
+
+      @media (min-width: 1200px) {
+        display: flex;
       }
     }
 
