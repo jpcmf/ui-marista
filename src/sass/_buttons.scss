@@ -26,4 +26,15 @@
     width: 100%;
     z-index: 99 !important;
   }
+
+  &.btn-more-news {
+    background-color: $c-blue-dark;
+    border-radius: 0;
+    color: $c-white;
+    font-family: $font-ws;
+    font-size: 21px;
+    font-weight: 500;
+    padding: 29px 0;
+    width: 100%;
+  }
 }
