@@ -19,9 +19,25 @@ import '../sass/main.scss';
 
 ;(function(window, document){
   $('h1').click(() => alert('It\'s only a test'));
+
+  // open subnav of megamenu items on hover
+  // --------------------------------------
+  $(".nav-item--collapse").hover(
+    function () {
+      $(this).children('.collapse').collapse('show');
+    }, function () {
+      $(this).children('.collapse').collapse('hide');
+    }
+  );
+
+  // multi carousel home
+  // --------------------------------------
+  $('.next1').click(function () { $('.carousel--multi').carousel('next'); return false; });
+  $('.prev1').click(function () { $('.carousel--multi').carousel('prev'); return false; });
+
 })(window, document);
 
-$(document).ready(function() {
+// $(document).ready(function () {
 
   // // breakpoint and up
   // $(window).resize(function () {
@@ -42,36 +58,4 @@ $(document).ready(function() {
   //   }
   // });
 
-  // open subnav of megamenu items on hover
-  // --------------------------------------
-  $(".nav-item--collapse").hover(
-    function () {
-      $(this).children('.collapse').collapse('show');
-    }, function () {
-      $(this).children('.collapse').collapse('hide');
-    }
-  );
-
-  // multi carousel home
-  // --------------------------------------
-  $('.next').click(function () { $('.carousel--multi').carousel('next'); return false; });
-  $('.prev').click(function () { $('.carousel--multi').carousel('prev'); return false; });
-  // $('.carousel--multi').carousel({
-  //   interval: false
-  // });
-
-  // $('.carousel--multi .carousel-item').each(function () {
-  //   var next = $(this).next();
-  //   if (!next.length) {
-  //     next = $(this).siblings(':first');
-  //   }
-  //   next.children(':first-child').clone().appendTo($(this));
-
-  //   if (next.next().length > 0) {
-  //     next.next().children(':first-child').clone().appendTo($(this));
-  //   } else {
-  //     $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
-  //   }
-  // });
-
-});
+// });

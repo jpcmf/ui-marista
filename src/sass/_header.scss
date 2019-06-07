@@ -104,7 +104,23 @@ header {
                 max-width: 24px;
               }
 
-              &.nav-link--arrow {}
+              &.nav-link--arrow {
+                align-items: center;
+                display: flex;
+
+                i {
+                  align-items: center;
+                  background-color: $c-blue;
+                  border-radius: 50%;
+                  color: $c-white;
+                  display: flex;
+                  height: 17px;
+                  justify-content: center;
+                  flex-shrink: 0;
+                  font-size: 12px;
+                  width: 17px;
+                }
+              }
 
               &.nav-link--icon {
                 position: relative;
@@ -209,6 +225,21 @@ header {
           justify-items: center;
           width: 100%;
 
+          @media (min-width: 992px) {
+            li:not(.dropdown--megamenu) {
+              a {
+                &:after {
+                  border: 0;
+                }
+
+                i {
+                  color: $c-blue;
+                  margin-left: 5px;
+                }
+              }
+            }
+          }
+
           li {
             display: flex;
             align-items: center;
@@ -269,7 +300,6 @@ header {
               position: inherit;
 
               .dropdown-menu {
-                border: 1px solid red;
                 background-color: $header-submenu-bg-color;
                 border: 0;
                 border-radius: 0;
