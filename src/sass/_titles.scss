@@ -1,0 +1,28 @@
+//
+// titles
+// --------------------
+
+h2, .main-titles {
+  color: $c-blue-dark;
+  font-size: 33px;
+  font-weight: 700;
+  line-height: 35px;
+  text-transform: uppercase;
+
+  &:after {
+    background-color: $c-blue;
+    content: '';
+    display: block;
+    height: 4px;
+    margin-top: 10px;
+    width: 70px;
+  }
+}
+
+h3, .main-subtitle {
+  color: $c-blue;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 26px;
+  text-transform: uppercase;
+}

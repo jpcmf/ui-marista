@@ -1,0 +1,25 @@
+//
+// home - latest news
+// --------------------
+
+.mc-latestnews {
+  background-color: $c-gray;
+  padding-top: 80px;
+
+  .main-subtitle {
+    margin-bottom: 26px;
+    margin-top: 50px;
+  }
+
+  &__card {
+    border: 1px solid red;
+  }
+
+  &__image {
+    img {
+      height: 100%;
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+}

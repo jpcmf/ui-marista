@@ -15,6 +15,7 @@
 
     &:focus {
       background-color: $footer-input-color;
+      color: $c-white;
     }
 
     &::-webkit-input-placeholder {
