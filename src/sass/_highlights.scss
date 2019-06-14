@@ -159,7 +159,7 @@
       color: $c-blue-dark;
       font-size: 15px;
       font-weight: 600;
-      padding: 15px;
+      padding: 16px;
       position: relative;
 
       i {
@@ -190,13 +190,18 @@
       border: solid 2px transparent;
       border-radius: 0;
       color: $c-blue-dark;
-      font-size: 14px;
+      font-size: 12px;
       font-weight: 600;
       margin-top: -2px;
       padding-bottom: 0;
       padding-left: 10px;
       padding-right: 10px;
       padding-top: 25px;
+
+      i {
+        color: $c-white;
+        margin-left: 5px;
+      }
 
       &.active,
       &:hover {
@@ -205,6 +210,10 @@
         border-left: 0;
         border-right: 0;
         border-width: 2px;
+
+        i {
+          color: $c-blue-dark;
+        }
       }
     }
   }
