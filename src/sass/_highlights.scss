@@ -123,6 +123,99 @@
 // --------------------
 
 .mc-highlights-tabs {
+  padding-bottom: 80px;
   padding-top: 110px;
+
+  .tab-pane {
+    img {
+      width: 100%;
+    }
+
+    h2 {
+      font-size: 30px;
+    }
+
+    h4,
+    p {
+      line-height: 24px;
+    }
+
+    h4 {
+      color: $c-blue-dark;
+      font-family: $font-playfair;
+      font-size: 17px;
+      font-style: italic;
+    }
+
+    p {
+      color: $c-gray3;
+      font-size: 15px;
+      font-weight: 500;
+      padding-bottom: 45px;
+      margin-top: 28px;
+    }
+
+    a {
+      color: $c-blue-dark;
+      font-size: 15px;
+      font-weight: 600;
+      padding: 16px;
+      position: relative;
+
+      i {
+        margin-left: 6px;
+      }
+
+      &:after {
+        background-color: $c-blue;
+        content: '';
+        display: block;
+        height: 50px;
+        position: absolute;
+        top: 0;
+        z-index: -1;
+        width: 50px;
+      }
+    }
+  }
+
+  .nav-tabs {
+    border-bottom: 0;
+    border-top: solid 2px rgba($c-blue, .1);
+    flex-wrap: unset;
+    justify-content: space-between;
+    margin-top: 100px;
+
+    .nav-link {
+      border: solid 2px transparent;
+      border-radius: 0;
+      color: $c-blue-dark;
+      font-size: 12px;
+      font-weight: 600;
+      margin-top: -2px;
+      padding-bottom: 0;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 25px;
+
+      i {
+        color: $c-white;
+        margin-left: 5px;
+      }
+
+      &.active,
+      &:hover {
+        border-color: $c-blue;
+        border-bottom: 0;
+        border-left: 0;
+        border-right: 0;
+        border-width: 2px;
+
+        i {
+          color: $c-blue-dark;
+        }
+      }
+    }
+  }
 }
 
