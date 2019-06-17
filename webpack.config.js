@@ -19,6 +19,17 @@ plugins.push(new htmlWebpackPlugin({
   template: __dirname + '/main.html'
 }));
 
+plugins.push(new htmlWebpackPlugin({
+  hash: true,
+  minify: {
+    html5: true,
+    collapseWhitespace: true,
+    removeComments: true
+  },
+  filename: 'atividades.html',
+  template: __dirname + '/atividades.html'
+}));
+
 plugins.push(new extractTextPlugin('style.css'));
 
 plugins.push(new webpack.ProvidePlugin({
@@ -27,7 +38,7 @@ plugins.push(new webpack.ProvidePlugin({
 }));
 
 plugins.push(new copyWebpackPlugin([
-  { from: 'src/images/*', to: '' }
+  { from: 'src/images/*', to: '' },
 ]));
 
 plugins.push(new webpack.optimize.CommonsChunkPlugin({
