@@ -1,0 +1,48 @@
+// activities
+// --------------------
+
+.mc-activities {
+  .main-title {
+    margin-bottom: 90px;
+  }
+
+  &__card {
+    border: solid 1px $c-gray;
+    color: $c-blue-dark;
+    display: block;
+    margin-bottom: 50px;
+
+    &:hover {
+      text-decoration: none;
+
+      .mc-activities__body {
+        background-color: $c-blue;
+        color: $c-white;
+      }
+    }
+  }
+
+  &__image {
+    img {
+      width: 100%;
+    }
+  }
+
+  &__body {
+    background-color: $c-gray;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 23px;
+    padding: 21px 25px;
+  }
+
+  .btn-square {
+    margin: 20px auto 0;
+  }
+
+  &--eventos {
+    padding-bottom: 75px;
+  }
+}
