@@ -35,6 +35,13 @@ import '../sass/main.scss';
   $('.next1').click(function () { $('.carousel--multi').carousel('next'); return false; });
   $('.prev1').click(function () { $('.carousel--multi').carousel('prev'); return false; });
 
+  // tabs bs
+  // ---------------------------------------
+  $('#ourPresenceTabs a').on('click', function (e) {
+    e.preventDefault()
+    $(this).tab('show')
+  })
+
 })(window, document);
 
 // $(document).ready(function () {
