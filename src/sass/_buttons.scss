@@ -37,4 +37,35 @@
     padding: 29px 0;
     width: 100%;
   }
+
+  &.btn-square {
+    color: $c-blue-dark;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 12px;
+    position: relative;
+
+    i {
+      margin-left: 6px;
+    }
+
+    &:after {
+      background-color: $c-blue;
+      content: '';
+      display: block;
+      height: 40px;
+      position: absolute;
+      top: 0;
+      z-index: -1;
+      width: 40px;
+    }
+
+    &-leak {
+      &:after {
+        background-color: transparent;
+        border: solid 1px $c-blue;
+
+      }
+    }
+  }
 }
