@@ -3,11 +3,34 @@
 // --------------------
 
 .mc-breadcrumbs {
-  border: 1px solid red;
+  padding-bottom: 22px;
+  padding-top: 33px;
 
   nav {
     ol {
+      background-color: transparent;
+      border-radius: 0;
       margin: 0;
+      padding: 0;
+
+      li, a {
+        font: {
+          size: 10px;
+          weight: 600;
+        }
+      }
+
+      li {
+        a {
+          color: $c-gray5;
+        }
+
+        &.active {
+          a {
+            color: $c-blue;
+          }
+        }
+      }
     }
   }
 }
