@@ -1,0 +1,56 @@
+//
+// single
+// ------
+
+.mc-single {
+  &__image {
+    img {
+      width: 100%;
+    }
+  }
+
+  &__header {
+    align-items: center;
+    display: flex;
+    padding: 50px 0 14.5px;
+
+    .date {
+      color: $c-blue;
+      font-size: 19px;
+      font-weight: 500;
+      margin-right: 20px;
+    }
+
+    .label {
+      background-color: $c-blue;
+      color: $c-white;
+      border-radius: 16px;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 12px;
+      padding: 7.5px 13px 5.5px 13px;
+    }
+  }
+
+  &__body {
+    .main-title:after {
+      display: none;
+    }
+
+    p {
+      color: $c-gray3;
+      font-size: 14px;
+    }
+  }
+
+  &__share {
+    margin-top: 50px;
+
+    span {
+      color: $c-blue-dark;
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+  }
+}
