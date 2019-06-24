@@ -30,6 +30,17 @@ plugins.push(new htmlWebpackPlugin({
   template: __dirname + '/atividades.html'
 }));
 
+plugins.push(new htmlWebpackPlugin({
+  hash: true,
+  minify: {
+    html5: true,
+    collapseWhitespace: true,
+    removeComments: true
+  },
+  filename: 'eventos.html',
+  template: __dirname + '/eventos.html'
+}));
+
 plugins.push(new extractTextPlugin('style.css'));
 
 plugins.push(new webpack.ProvidePlugin({

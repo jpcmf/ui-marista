@@ -1,0 +1,30 @@
+// tags
+// --------------------
+
+.tags {
+  padding-bottom: 20px;
+
+  &__content {
+    background-color: $c-gray;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 40px;
+    padding: 30px 10px;
+  }
+
+  &__link {
+    border: solid 1px $c-blue;
+    color: $c-blue;
+    font-size: 12px;
+    font-weight: 500;
+    margin: 6px 5px;
+    padding: 6.5px 15px;
+
+    &:hover {
+      background-color: $c-blue;
+      color: $c-white;
+      text-decoration: none;
+    }
+  }
+}
