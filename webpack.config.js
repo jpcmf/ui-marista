@@ -52,6 +52,17 @@ plugins.push(new htmlWebpackPlugin({
   template: __dirname + '/eventos-single.html'
 }));
 
+plugins.push(new htmlWebpackPlugin({
+  hash: true,
+  minify: {
+    html5: true,
+    collapseWhitespace: true,
+    removeComments: true
+  },
+  filename: 'calendario.html',
+  template: __dirname + '/calendario.html'
+}));
+
 plugins.push(new extractTextPlugin('style.css'));
 
 plugins.push(new webpack.ProvidePlugin({
