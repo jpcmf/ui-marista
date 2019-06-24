@@ -99,6 +99,18 @@
 
   &--projects {
     padding-top: 85px;
+
+    .mc-default {
+      &__card {
+        background-color: $c-gray6;
+      }
+
+      &__body {
+        p {
+          font-weight: 700;
+        }
+      }
+    }
   }
 
   .main-title {
