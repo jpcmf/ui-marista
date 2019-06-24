@@ -205,21 +205,6 @@ header {
         background-color: $header-secondary-bg-color;
         padding-bottom: 0;
         padding-top: 0;
-        // min-height: $navbar_secondary--height;
-
-        // &.navbar-fixed-top {
-        //   z-index: $navbar_secondary--z-index;
-        //   top: $navbar-height;
-        // }
-
-        // @media (min-width: $grid-float-breakpoint) {
-        //   padding: $navbar_secondary--padding-uncollapsed;
-
-        //   .navbar-collapse {
-        //     padding-right: 0;
-        //     padding-left: 0;
-        //   }
-        // }
 
         .navbar-nav {
           justify-items: center;

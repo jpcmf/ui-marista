@@ -17,6 +17,7 @@ $c-gray2 : #9FACB7;
 $c-gray3 : #707070;
 $c-gray4 : #BCBDC1;
 $c-gray5 : #B4B4B4;
+$c-gray6 : #F8F7F8;
 
 //layout
 $header-secondary-bg-color : #053A64;
@@ -34,13 +35,7 @@ $footer-social-color: #3C82B9;
 $footer-border-color: #204867;
 $footer-sep-color: #17405F;
 
-// default bootstrap variables
-$grid-float-breakpoint: 768px;
-$grid-gutter-width: 30px;
-$navbar-height: 50px;
-$zindex-navbar-fixed: 1030;
-
-// module variables
-$navbar_secondary--height: 50px !default;
-$navbar_secondary--z-index: $zindex-navbar-fixed - 1;
-$navbar_secondary--padding-uncollapsed: 0; // $grid-gutter-width
+$calendar1-bg-color: #3C82B9;
+$calendar2-bg-color: #326995;
+$calendar3-bg-color: #3974A3;
+$calendar-startend-color: #9EC1DC;
