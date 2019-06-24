@@ -53,4 +53,56 @@
       text-transform: uppercase;
     }
   }
+
+  &__nav {
+    background-color: $c-gray;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    padding: 39px 25px;
+
+    .mc-single__header {
+      padding-bottom: 5px;
+      padding-top: 0;
+
+      .date {
+        font-size: 12px;
+      }
+
+      .label {
+        font-size: 10px;
+        padding-bottom: 5px;
+        padding-top: 5px;
+      }
+    }
+
+    .mc-single__body {
+      p {
+        color: $c-blue-dark;
+        font-size: 15px;
+        font-weight: 700;
+      }
+    }
+
+    &-l {
+      .mc-single__link i {
+        margin-right: 7px;
+      }
+    }
+
+    &-r {
+      .mc-single__link i {
+        margin-left: 7px;
+      }
+    }
+  }
+
+  &__link {
+    color: $c-blue;
+    font-size: 10px;
+
+    i {
+      font-size: 11px;
+    }
+  }
 }
