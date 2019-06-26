@@ -74,6 +74,17 @@ plugins.push(new htmlWebpackPlugin({
   template: __dirname + '/noticias.html'
 }));
 
+plugins.push(new htmlWebpackPlugin({
+  hash: true,
+  minify: {
+    html5: true,
+    collapseWhitespace: true,
+    removeComments: true
+  },
+  filename: 'fotos.html',
+  template: __dirname + '/fotos.html'
+}));
+
 plugins.push(new extractTextPlugin('style.css'));
 
 plugins.push(new webpack.ProvidePlugin({
