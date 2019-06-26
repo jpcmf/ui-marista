@@ -63,6 +63,17 @@ plugins.push(new htmlWebpackPlugin({
   template: __dirname + '/calendario.html'
 }));
 
+plugins.push(new htmlWebpackPlugin({
+  hash: true,
+  minify: {
+    html5: true,
+    collapseWhitespace: true,
+    removeComments: true
+  },
+  filename: 'noticias.html',
+  template: __dirname + '/noticias.html'
+}));
+
 plugins.push(new extractTextPlugin('style.css'));
 
 plugins.push(new webpack.ProvidePlugin({
