@@ -49,6 +49,18 @@
 
   @media (min-width: 768px) {
 
+    .carousel-item {
+      align-items: center;
+      display: none;
+      float: none;
+      position: relative;
+      width: 100%;
+      // @include transition($carousel-transition);
+      backface-visibility: hidden;
+      perspective: 1000px;
+      margin-right: inherit;
+    }
+
     /* show 3 items */
     .carousel-inner .active,
     .carousel-inner .active + .carousel-item,
