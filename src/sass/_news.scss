@@ -124,6 +124,16 @@
       }
     }
 
+    &--videos {
+      .mc-latestnews__body {
+        padding-bottom: 0;
+
+        p {
+          min-height: 70px;
+        }
+      }
+    }
+
   }
 
   &__image {
