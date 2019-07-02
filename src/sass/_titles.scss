@@ -29,4 +29,12 @@ h3, .main-subtitle {
   font-weight: 600;
   line-height: 26px;
   text-transform: uppercase;
+
+  &--gray {
+    color: $c-gray3;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 24px;
+    text-transform: capitalize;
+  }
 }

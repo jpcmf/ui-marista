@@ -17,7 +17,7 @@ import '../sass/main.scss';
 // magic goes here
 // --------------------
 
-;(function(window, document){
+;(function(window, document) {
   $('h1').click(() => alert('It\'s only a test'));
 
   // open subnav of megamenu items on hover
@@ -68,24 +68,25 @@ import '../sass/main.scss';
 
 })(window, document);
 
-$(document).ready(function () {
-  // // breakpoint and up
-  // $(window).resize(function () {
-  //   if ($(window).width() >= 980) {
+// $(document).ready(function () {
 
-  //     // when you hover a toggle show its dropdown menu
-  //     $(".navbar-secondary .dropdown-toggle").hover(function () {
-  //       $(this).parent().toggleClass("show");
-  //       $(this).parent().find(".dropdown-menumega").toggleClass("show");
-  //     });
+//   // breakpoint and up
+//   $(window).resize(function () {
+//     if ($(window).width() >= 980) {
 
-  //     // hide the menu when the mouse leaves the dropdown
-  //     $(".navbar-secondary .dropdown-menumega").mouseleave(function () {
-  //       $(this).removeClass("show");
-  //     });
+//       // when you hover a toggle show its dropdown menu
+//       $(".navbar-secondary .dropdown-toggle").hover(function () {
+//         $(this).parent().toggleClass("show");
+//         $(this).parent().find(".dropdown-menumega").toggleClass("show");
+//       });
 
-  //     // do something here
-  //   }
-  // });
+//       // hide the menu when the mouse leaves the dropdown
+//       $(".navbar-secondary .dropdown-menumega").mouseleave(function () {
+//         $(this).removeClass("show");
+//       });
 
-});
+//       // do something here
+//     }
+//   });
+
+// });
