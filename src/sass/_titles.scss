@@ -2,7 +2,7 @@
 // titles
 // --------------------
 
-h2, .main-titles {
+h2, .main-title {
   color: $c-blue-dark;
   font-size: 33px;
   font-weight: 700;
@@ -16,6 +16,10 @@ h2, .main-titles {
     height: 4px;
     margin-top: 10px;
     width: 70px;
+  }
+
+  &--space30 {
+    margin-bottom: 30px;
   }
 }
 
