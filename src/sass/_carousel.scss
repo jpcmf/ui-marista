@@ -45,7 +45,6 @@
 }
 
 .mc-news {
-  border: solid 1px red;
 
   @media (min-width: 768px) {
 
@@ -123,8 +122,6 @@
         visibility: visible;
         display: block;
         visibility: visible;
-        border: 1px solid red;
     }
-
-}
+  }
 }
