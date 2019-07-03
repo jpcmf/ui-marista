@@ -69,4 +69,15 @@
       }
     }
   }
+
+  &.btn-send {
+    background-color: $c-blue;
+    border-radius: 0;
+    color: $c-white;
+    display: flex;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 17px;
+    margin-left: auto;
+  }
 }
