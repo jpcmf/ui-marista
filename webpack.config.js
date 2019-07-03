@@ -107,6 +107,17 @@ plugins.push(new htmlWebpackPlugin({
   template: __dirname + '/biblioteca.html'
 }));
 
+plugins.push(new htmlWebpackPlugin({
+  hash: true,
+  minify: {
+    html5: true,
+    collapseWhitespace: true,
+    removeComments: true
+  },
+  filename: 'fale-conosco.html',
+  template: __dirname + '/fale-conosco.html'
+}));
+
 plugins.push(new extractTextPlugin('style.css'));
 
 plugins.push(new webpack.ProvidePlugin({

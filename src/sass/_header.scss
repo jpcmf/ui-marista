@@ -550,6 +550,10 @@ header {
                 align-items: flex-start;
                 flex-direction: row;
 
+                a:not(.btn-fale) {
+                  padding: 0 !important;
+                }
+
                 a {
                   border: 0;
                   color: $header-megamenu-sublink-color;
@@ -566,6 +570,11 @@ header {
 
                   &.btn-fale {
                     color: $c-white;
+
+                    &:hover {
+                      background-color: $c-blue-dark !important;
+                      text-decoration: none !important;
+                    }
                   }
                 }
               }

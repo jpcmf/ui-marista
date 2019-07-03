@@ -1,0 +1,66 @@
+// talk us
+// --------------------
+
+.mc-talkus {
+
+  &__direct {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+
+    &-name,
+    &-mail {
+      font-size: 13px;
+    }
+
+    &-name {
+      color: $c-blue-dark;
+      font: {
+        line-height: 15px;
+        weight: 700;
+      }
+      display: block;
+    }
+
+    &-mail {
+      color: $c-gray4;
+
+      i {
+        color: $c-blue;
+        margin-right: 12px;
+      }
+    }
+  }
+
+  &__form {
+    margin-top: 30px;
+
+  }
+
+  &__general {
+    background-color: $c-blue-dark;
+    margin-top: 35px;
+    padding: 45px 22px;
+
+    span, a {
+      color: $c-white;
+    }
+
+    span {
+      display: block;
+      font-size: 14px;
+      line-height: 24px;
+
+      i {
+        color: $c-blue;
+        margin-right: 10px;
+      }
+    }
+
+    &-title {
+      font-size: 18px !important;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+  }
+}
