@@ -118,6 +118,17 @@ plugins.push(new htmlWebpackPlugin({
   template: __dirname + '/fale-conosco.html'
 }));
 
+plugins.push(new htmlWebpackPlugin({
+  hash: true,
+  minify: {
+    html5: true,
+    collapseWhitespace: true,
+    removeComments: true
+  },
+  filename: 'instituto-marista.html',
+  template: __dirname + '/instituto-marista.html'
+}));
+
 plugins.push(new extractTextPlugin('style.css'));
 
 plugins.push(new webpack.ProvidePlugin({
