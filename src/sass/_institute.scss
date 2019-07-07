@@ -3,6 +3,15 @@
 // --------------------
 
 .mc-institute {
+  &--sidenav {
+    position: sticky;
+    top: 0;
+  }
+
+  &--blue {
+    background-color: $c-blue-dark;
+  }
+
   &__section {
     border: 1px solid red;
 
@@ -51,6 +60,33 @@
       + span {
         color: $c-white;
         font-size: 12px;
+      }
+    }
+  }
+
+  &__government {
+    padding: 120px 0;
+
+    p, small {
+      color: $c-white;
+    }
+
+    small {
+      font-size: 14px;
+    }
+
+    &-card {
+      margin-top: 50px;
+    }
+
+    &-name {
+      background-color: $c-blue;
+      text-align: center;
+      padding: 16px 0;
+
+      p {
+        margin: 0;
+        font-weight: 700;
       }
     }
   }
