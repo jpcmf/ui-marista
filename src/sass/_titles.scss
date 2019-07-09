@@ -21,6 +21,10 @@ h2, .main-title {
   &--space30 {
     margin-bottom: 30px;
   }
+
+  &--white {
+    color: $c-white;
+  }
 }
 
 h3, .main-subtitle {

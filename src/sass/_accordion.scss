@@ -1,0 +1,24 @@
+//
+// accordion
+// --------------------
+
+.accordion {
+  // border: 1px solid #000;
+
+  .card {
+    background-color: transparent;
+    border: 0;
+
+    &-header {
+      background-color: $c-gray;
+
+      .btn-link {
+        color: $c-blue-dark;
+        font-size: 24px;
+        font-weight: 700;
+      }
+    }
+  }
+
+}
+
