@@ -16,6 +16,8 @@
 @import "_pagination";
 @import "_map";
 @import "_sidebar";
+@import "_accordion";
+
 
 @import "_header";
 @import "_footer";
@@ -36,6 +38,7 @@
 
 body {
   background-color: $main-bg-color;
+  color: $main-text-color;
   font-family: $font-raleway;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

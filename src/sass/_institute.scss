@@ -26,7 +26,7 @@
   }
 
   &__section {
-    border: 1px solid red;
+    // border: 1px solid red;
 
     img {
       width: 100%;
@@ -100,18 +100,82 @@
     }
   }
 
+  &__ourpresence,
+  &__adm,
+  &__house,
+  &__manziana,
+  &__chapter,
+  &__mission {
+    p {
+      font-size: 15px;
+      font-weight: 500;
+    }
+  }
+
+  &__adm {
+
+  }
+
+  &__house {
+    padding-bottom: 50px;
+    padding-top: 75px;
+
+    img {
+      margin-bottom: 60px;
+    }
+  }
+
+  &__manziana {
+    padding: 120px 0;
+  }
+
+  &__chapter {
+    padding: 60px 0 50px;
+
+    .btn-square {
+      z-index: 1;
+    }
+  }
+
   &__conference {
     padding-bottom: 100px;
     padding-top: 140px;
+
+    .nav-tabs {
+      border-bottom: solid 2px rgba($c-blue, .1);
+      border-top: 0;
+      margin: 0;
+
+      .nav-link {
+        border-bottom: solid 2px transparent;
+        font-size: 18px;
+        margin-bottom: -3px;
+        margin-top: 0;
+        padding: 10px 0 25px;
+
+        &.active,
+        &:hover,
+        &:focus {
+          border-bottom: solid 2px $c-blue;
+          border-top: 0;
+        }
+      }
+    }
+
+    .tab-content {
+      margin-top: 85px;
+
+      p {
+        margin-bottom: 30px;
+        margin-top: 0;
+        padding: 0;
+      }
+    }
   }
 
   &__mission {
     padding-bottom: 50px;
     padding-top: 75px;
-
-    p {
-      color: $c-gray5;
-    }
 
     &-button {
       background-color: $c-blue;

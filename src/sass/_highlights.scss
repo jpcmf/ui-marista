@@ -123,7 +123,8 @@
 // --------------------
 
 .mc-highlights-tabs,
-.mc-ourpresence {
+.mc-ourpresence,
+.mc-institute__conference {
   padding-bottom: 80px;
   padding-top: 110px;
 
@@ -188,7 +189,7 @@
     margin-top: 100px;
 
     .nav-link {
-      border: solid 2px transparent;
+      border-top: solid 2px transparent;
       border-radius: 0;
       color: $c-blue-dark;
       font-size: 12px;
@@ -205,12 +206,13 @@
       }
 
       &.active,
-      &:hover {
-        border-color: $c-blue;
+      &:hover,
+      &:focus {
         border-bottom: 0;
-        border-left: 0;
-        border-right: 0;
-        border-width: 2px;
+        border-radius: 0;
+        border-top: solid 2px $c-blue;
+        border-left-color: transparent;
+        border-right-color: transparent;
 
         i {
           color: $c-blue-dark;

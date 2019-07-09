@@ -61,11 +61,17 @@
       width: 40px;
     }
 
-    &-leak {
+    &--leak {
       &:after {
-        background-color: transparent;
+        background-color: transparent !important;
         border: solid 1px $c-blue;
+      }
+    }
 
+    &--white {
+      color: $c-white;
+      &:after {
+        border: solid 1px $c-blue;
       }
     }
   }
