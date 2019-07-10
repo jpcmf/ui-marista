@@ -1,5 +1,4 @@
 .mc-ourpresence {
-  border: 1px solid red;
   padding-top: 0;
 
   &__text {
@@ -26,7 +25,48 @@
     }
   }
 
-  &--institute {
-    padding-top: 0;
+  &__countries {
+    margin-bottom: 55px;
+    margin-top: 70px;
+
+    &-title {
+      color: $c-blue-dark;
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 30px;
+    }
+
+    &-list {
+      columns: 2;
+      list-style: none;
+      padding: 0;
+
+      li {
+        &:before {
+          background-color: $c-blue;
+          border-radius: 50%;
+          content: '';
+          display: inline-block;
+          height: 6px;
+          width: 6px;
+          margin-right: 10px;
+        }
+      }
+
+      li > span {
+        color: $c-gray3;
+        font-weight: 500;
+      }
+    }
+  }
+
+  &__accordion {
+    .card {
+      margin-bottom: 26px;
+
+      &:last-child {
+        margin: 0;
+      }
+    }
   }
 }

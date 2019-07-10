@@ -3,22 +3,35 @@
 // --------------------
 
 .accordion {
-  // border: 1px solid #000;
-
   .card {
     background-color: transparent;
     border: 0;
 
     &-header {
       background-color: $c-gray;
+      border: 0;
 
       .btn-link {
+        align-items: center;
         color: $c-blue-dark;
+        display: flex;
+        justify-content: space-between;
         font-size: 24px;
         font-weight: 700;
+        width: 100%;
+
+        &:hover,
+        &:focus {
+          text-decoration: none;
+        }
+      }
+
+      i {
+        color: $c-blue-dark;
+        font-size: 24px;
+        font-weight: 300;
       }
     }
   }
-
 }
 
