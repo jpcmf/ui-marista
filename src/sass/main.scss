@@ -44,16 +44,21 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.scroll-to-top {
+  display: none;
+}
+
 // p {
 //   font-size: responsive;
 // }
 
-main {
-  padding-bottom: 130px;
-}
+// main {
+//   padding-bottom: 130px;
+// }
 
+//
 // REMOVER
-
+//
 // Extra small devices (portrait phones, less than 576px)
 // No media query since this is the default in Bootstrap
 
