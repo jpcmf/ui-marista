@@ -34,11 +34,21 @@ h3, .main-subtitle {
   line-height: 26px;
   text-transform: uppercase;
 
+  &--space30 {
+    margin-bottom: 30px;
+  }
+
   &--gray {
     color: $c-gray3;
     font-size: 15px;
     font-weight: 500;
     line-height: 24px;
     text-transform: capitalize;
+  }
+
+  &--blue-dark {
+    color: $c-blue-dark;
+    font-size: 24px;
+    font-weight: 700;
   }
 }
