@@ -1,0 +1,32 @@
+//
+// table
+// --------------------
+
+table {
+  &.table-striped {
+    tbody {
+      tr {
+        &:nth-of-type(odd) {
+          background-color: $c-gray6;
+        }
+        td {
+          border: 0;
+          padding-bottom: 20px;
+          padding-top: 20px;
+
+          &:first-child {
+            color: $c-blue;
+            font-weight: 700;
+            padding-left: 35px;
+          }
+
+          a {
+            color: $c-blue-dark;
+            font-weight: 500;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}

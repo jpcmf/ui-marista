@@ -1,0 +1,18 @@
+//
+// blockquote
+// --------------------
+
+.blockquote {
+  background-color: rgba($c-gray7, .06);
+  border-left: solid 4px $c-blue;
+  text-align: center;
+  padding: 30px 0;
+
+  p {
+    color: $c-blue-dark;
+    font-family: $font-playfair;
+    font-size: 34px !important;
+    font-style: italic;
+    margin: 0;
+  }
+}
