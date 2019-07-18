@@ -83,14 +83,25 @@
       list-style: none;
       padding: 0;
     }
+
+    li {
+      font-size: 15px;
+      font-weight: 500;
+    }
   }
 
   &__children {
-
+    &-search {
+      margin-top: 100px;
+    }
   }
 
   &__community {
     border-top: solid 1px rgba($c-gray3, .25);
+
+    .mc-institute__mission-button {
+      margin-top: 30px;
+    }
   }
 
   &__family {
