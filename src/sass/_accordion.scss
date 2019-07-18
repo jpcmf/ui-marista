@@ -6,10 +6,12 @@
   .card {
     background-color: transparent;
     border: 0;
+    border-radius: 0;
 
     &-header {
       background-color: $c-gray;
       border: 0;
+      border-radius: 0;
 
       .btn-link {
         align-items: center;
