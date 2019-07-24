@@ -44,7 +44,6 @@
   }
 
   // REMOVER
-  &__history,
   &__founder,
   &__ourpresence,
   &__government,
@@ -357,8 +356,12 @@
       margin-bottom: 70px;
     }
 
-    .btn {
+    .btn-square {
       margin-top: 50px;
+    }
+
+    &-accordion {
+      margin-top: 100px;
     }
   }
 
