@@ -147,6 +147,17 @@ plugins.push(new htmlWebpackPlugin({
     collapseWhitespace: true,
     removeComments: true
   },
+  filename: 'instituto-fundador.html',
+  template: __dirname + '/instituto-fundador.html'
+}));
+
+plugins.push(new htmlWebpackPlugin({
+  hash: true,
+  minify: {
+    html5: true,
+    collapseWhitespace: true,
+    removeComments: true
+  },
   filename: 'ser-marista.html',
   template: __dirname + '/ser-marista.html'
 }));
