@@ -59,6 +59,40 @@
   }
   // END
 
+  &__beat {
+    margin-top: 160px;
+
+    &-italic {
+      color: $c-blue-dark;
+      font-family: $font-playfair;
+      font-size: 20px;
+      font-style: italic;
+    }
+
+    &-grid {
+      margin-top: 90px;
+    }
+
+    &-pics {
+      > div {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+
+    &-description {
+      border-bottom: solid 1px $c-gray3;
+      margin-top: 50px;
+      padding-bottom: 130px;
+    }
+
+    .btn-square {
+      margin-top: 50px;
+    }
+
+
+  }
+
   &__value {
     margin-bottom: 120px;
     margin-top: 20px;
@@ -605,6 +639,27 @@
         color: $c-white;
         text-decoration: none;
       }
+    }
+  }
+}
+
+.mc-institute {
+  &__bg-image {
+    background: url('https://via.placeholder.com/370x260') no-repeat center center;
+    background-size: cover;
+    height: 645px;
+
+    p {
+      color: $c-white;
+    }
+  }
+
+  &__bg-gray {
+    background-color: $c-gray;
+    height: 645px;
+
+    p {
+      color: $c-blue-dark;
     }
   }
 }
