@@ -25,6 +25,10 @@
       background-color: $c-gray;
     }
 
+    &--bg-white {
+      background-color: $c-white;
+    }
+
     &--v2 {
       border-radius: 0;
       display: flex;
