@@ -214,6 +214,40 @@
       }
     }
 
+    &--album {
+      .mc-default__body {
+        border-bottom: solid 1px $c-gray4;
+        padding-bottom: 20px;
+        padding-left: 0;
+        padding-right: 0;
+
+        a {
+          display: flex;
+          align-items: center;
+
+          &:hover {
+            text-decoration: none;
+          }
+
+          p {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 18px;
+            margin: 0;
+          }
+
+          i.fa-camera {
+            color: $c-blue;
+            margin-right: 15px;
+          }
+
+          i.fa-long-arrow-right {
+            margin-left: auto;
+          }
+        }
+      }
+    }
+
   }
 
   &__wrapper {
