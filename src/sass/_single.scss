@@ -133,4 +133,10 @@
   &__content {
     padding: 70px 0 50px;
   }
+
+  &__grid {
+    &-item {
+      margin-bottom: 32px;
+    }
+  }
 }

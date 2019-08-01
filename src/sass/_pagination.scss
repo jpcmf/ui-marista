@@ -15,6 +15,7 @@
       &:first-child,
       &:last-child {
         a {
+          background-color: transparent;
           border: 0;
           color: $c-gray4;
           font-size: 10px;
@@ -31,7 +32,7 @@
     .page-item:not(:first-child):not(:last-child) {
       a {
         align-items: center;
-        background-color: $c-white;
+        // background-color: $c-white;
         border: solid 1px $c-gray5;
         border-radius: 50%;
         color: $c-gray3;
@@ -44,6 +45,8 @@
         width: 30px;
         transition: ease-in-out 300ms all;
 
+
+
         &:hover {
           background-color: $c-blue;
           border: solid 1px transparent;
@@ -52,6 +55,17 @@
           // height: 40px;
           // line-height: 18px;
           // width: 40px;
+        }
+      }
+
+    }
+
+    .page-item {
+      &.active {
+        a {
+          background-color: $c-blue;
+          border-color: $c-blue !important;
+          color: $c-white !important;
         }
       }
     }

@@ -8,6 +8,19 @@ const copyWebpackPlugin = require('copy-webpack-plugin');
 
 let plugins = [];
 
+let HWPConfig = new htmlWebpackPlugin({
+  minify: {
+    html5: true,
+    collapseWhitespace: true,
+    removeComments: true
+  },
+  filename: 'index.html',
+  template: __dirname + '/main.html'
+})
+
+console.log(HWPConfig);
+
+
 plugins.push(new htmlWebpackPlugin({
   hash: true,
   minify: {
@@ -224,6 +237,17 @@ plugins.push(new htmlWebpackPlugin({
     collapseWhitespace: true,
     removeComments: true
   },
+  filename: 'instituto-capitulos-single.html',
+  template: __dirname + '/instituto-capitulos-single.html'
+}));
+
+plugins.push(new htmlWebpackPlugin({
+  hash: true,
+  minify: {
+    html5: true,
+    collapseWhitespace: true,
+    removeComments: true
+  },
   filename: 'ser-marista.html',
   template: __dirname + '/ser-marista.html'
 }));
@@ -326,4 +350,7 @@ module.exports = {
     ]
   },
   plugins
+  // plugins: [
+
+  // ]
 }
