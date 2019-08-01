@@ -44,29 +44,63 @@
   }
 
   // REMOVER
-  &__founder,
-  &__ourpresence,
-  &__government,
-  &__adm,
-  &__house,
-  &__manziana,
-  &__chapter,
-  &__mission {
-    p {
-      font-size: 15px;
-      font-weight: 500;
+  // &__founder,
+  // &__ourpresence,
+  // &__government,
+  // &__adm,
+  // &__house,
+  // &__manziana,
+  // &__chapter,
+  // &__mission {
+  //   p {
+  //     font-size: 15px;
+  //     font-weight: 500;
+  //   }
+  // }
+  // END
+
+  &__space100,
+  &__school,
+  &__university,
+  &__publishing,
+  &__solidarity,
+  &__voluntary,
+  &__children,
+  &__pastoral,
+  &__community {
+    padding: 100px 0;
+  }
+
+  &__videos {
+    &-list {
+      margin-top: 85px;
+
+      .mc-default__body {
+        padding-bottom: 10px;
+
+        p {
+          margin: 0;
+          font-weight: 700;
+        }
+      }
     }
   }
-  // END
+
+  &__archive {
+    margin-bottom: 10px;
+    margin-top: 85px;
+    padding-bottom: 100px;
+
+    &-list {
+      margin-bottom: 50px;
+      margin-top: 80px;
+    }
+  }
 
   &__seealso {
     margin-bottom: 10px;
     margin-top: 85px;
     padding-bottom: 100px;
-
-    &-cards {
-
-    }
   }
 
   &__beat {
@@ -104,17 +138,6 @@
   &__value {
     margin-bottom: 120px;
     margin-top: 20px;
-  }
-
-  &__school,
-  &__university,
-  &__publishing,
-  &__solidarity,
-  &__voluntary,
-  &__children,
-  &__pastoral,
-  &__community {
-    padding: 100px 0;
   }
 
   &__voluntary {
