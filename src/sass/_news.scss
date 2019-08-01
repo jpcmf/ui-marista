@@ -306,6 +306,12 @@
       }
       line-height: 23px;
     }
+
+    &--blue {
+      p {
+        color: $c-blue-dark !important;
+      }
+    }
   }
 
   &__footer {
