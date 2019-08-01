@@ -37,7 +37,7 @@
       width: 100%;
     }
 
-    p {
+    p, ul {
       font-size: 15px;
       font-weight: 500;
     }
@@ -252,6 +252,12 @@
     .btn {
       margin-top: 100px;
     }
+
+    &-articles {
+      &-item {
+        margin-bottom: 90px;
+      }
+    }
   }
 
   &__leigos {
@@ -263,6 +269,9 @@
 
   &__spirit,
   &__leigos {
+    padding-bottom: 80px;
+    padding-top: 110px;
+
     &.mc-tabs {
       .nav-tabs {
         border-bottom: solid 2px rgba($c-blue, .1);
@@ -691,6 +700,69 @@
     p {
       color: $c-blue-dark;
     }
+  }
+}
+
+.mc-ser {
+  &__vertical-nav {
+    margin-top: 75px;
+    width: 100%;
+
+    .nav-pills {
+      background-color: $c-gray6;
+      padding: 45px 40px 65px;
+
+      .nav-link {
+        color: $c-blue-dark;
+        font-size: 18px;
+        font-weight: 700;
+        padding: 16px 0;
+
+        &.active,
+        &:hover {
+          background-color: transparent;
+          border-bottom: solid 1px $c-blue;
+          border-radius: 0;
+          color: $c-blue;
+        }
+      }
+    }
+
+    .blockquote {
+      margin: 40px 0;
+    }
+
+    .caption {
+      background-color: $c-blue;
+      color: $c-white;
+      font-family: $font-playfair;
+      font-size: 13px !important;
+      font-style: italic;
+      padding: 14px 0;
+      text-align: center;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+
+    li {
+      &:before {
+        background-color: $c-blue;
+        border-radius: 50%;
+        content: '';
+        display: inline-block;
+        height: 6px;
+        width: 6px;
+        margin-right: 10px;
+      }
+    }
+  }
+
+  &__links {
+    margin-bottom: 45px;
+    margin-top: 60px;
   }
 }
 
