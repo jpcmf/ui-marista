@@ -270,6 +270,17 @@ plugins.push(new htmlWebpackPlugin({
     collapseWhitespace: true,
     removeComments: true
   },
+  filename: 'ser-marista-irmaos-espiritualidade.html',
+  template: __dirname + '/ser-marista-irmaos-espiritualidade.html'
+}));
+
+plugins.push(new htmlWebpackPlugin({
+  hash: true,
+  minify: {
+    html5: true,
+    collapseWhitespace: true,
+    removeComments: true
+  },
   filename: 'missao-marista.html',
   template: __dirname + '/missao-marista.html'
 }));
