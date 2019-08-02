@@ -18,6 +18,10 @@
       border: 0;
       border-radius: 0;
 
+      &--blue {
+        background-color: $c-blue;
+      }
+
       .btn-link {
         align-items: center;
         color: $c-blue-dark;
@@ -27,16 +31,24 @@
         font-weight: 700;
         width: 100%;
 
+        &--white {
+          color: $c-white;
+        }
+
         &:hover,
         &:focus {
           text-decoration: none;
         }
       }
 
-      i {
+      i.fa-plus {
         color: $c-blue-dark;
         font-size: 24px;
         font-weight: 300;
+
+        &--white {
+          color: $c-white;
+        }
       }
     }
   }
