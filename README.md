@@ -1,4 +1,4 @@
-# My Bootstrap Webpack Template
+# UI Development to Marista
 
 ## Install dependencies
 
